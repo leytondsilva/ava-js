@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon-iphone-60x60.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-ipad-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina-152x152.png">  
+        
+        <title>Leyton D'silva</title>
+
+        
+        <link href="./css/fontsMonsterRat.css" rel="stylesheet">
+        <link href="./css/fontsPoppins.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet" media="screen">
+        
+        <audio id="myAudio" loop>
+            <source src="audio/music.mp3" type="audio/mp3">
+        </audio>
+        <script>
+        var x = document.getElementById("myAudio"); 
+        function playAudio() { 
+            if ($('.audio').hasClass('start'))  {
+                x.pause();
+                $('.audio').removeClass('start');
+            } else {
+                x.play();
+                $('.audio').addClass('start');
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="animsition">
+            <div class="loader">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+            <div class="click-capture"></div>
+            <div class="menu">
+                <span class="close-menu icon-cross2 right-boxed"></span>
+                <ul class="menu-list right-boxed">
+                    <li data-menuanchor="Home" class="active">
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li data-menuanchor="AboutMe">
+                        <a href="#AboutMe">About me</a>
+                    </li>
+                    <li data-menuanchor="Resume">
+                        <a href="#Resume">Resume</a>
+                    </li>
+                    <li data-menuanchor="Projects">
+                        <a href="#Projects">Projects</a>
+                    </li>
+                    <li data-menuanchor="WebApps">
+                        <a href="#WebApps">Web apps</a>
+                    </li>
+                    <li data-menuanchor="Contact">
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="menu-footer right-boxed">
+                    <div class="social-list">
+                        <a href="#" class="icon img-icon"><img src="./img/discord-96.png" alt="discord-icon" width="22px" height="22px"></a>
+                        <!--<a href="#" class="icon ion-social-facebook"></a>-->
+                        <a href="https://www.instagram.com/leytondsilva2000/" class="icon img-icon"><img src="./img/instagram-104.png" alt="instagram-icon" width="20px" height="20px"></a>
+                        <!--<a href="#" class="icon ion-social-twitter"></a>-->
+                    </div>
+                    <div class="copy">© Leyton 2020. All Rights Reserved</div>
+                </div>
+            </div>
+
+            <header class="navbar navbar-fullpage boxed">
+                <div class="navbar-bg"></div>
+                <a class="brand" href="#Home">
+                    <img alt="L-img" src="./img/brand.png" height="45" width="45">
+                    <div class="brand-info">
+                        <div class="brand-name">Leyton</div>
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="contacts d-none d-md-block">
+                    <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/leytondsilva/">linkedin-leytondsilva</a>
+                    </div>
+                    <div class="contact-item spacer">
+                        /
+                    </div>
+                    <div class="contact-item">
+                        <a href="#">contatct@leyton.com</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="copy-bottom white boxed">© Leyton 2020.</div>
+            <div class="copy-bottom white center">
+                <button class="btn-audio" type="button" onclick="playAudio()" >
+                    SOUND
+                    <div class="btn-wave">
+                        <span class="audio"></span>
+                        <span class="audio"></span>
+                        <span class="audio"></span>
+                        <span class="audio"></span>
+                        <span class="audio"></span>
+                    </div>
+                </button>
+            </div>
+            <div class="social-list social-list-bottom boxed">
+                <a href="#" class="icon img-icon"><img src="./img/discord-96.png" alt="discord-icon" width="22px" height="22px"></a>
+                <!--<a href="#" class="icon ion-social-facebook"></a>-->
+                <a href="https://www.instagram.com/leytondsilva2000/" class="icon img-icon"><img src="./img/instagram-104.png" alt="instagram-icon" width="20px" height="20px"></a>
+                <!--<a href="#" class="icon ion-social-twitter"></a>-->
+            </div>
+            <div class="pagepiling">
+                <div data-anchor="Home" class="pp-scrollable text-white section section-1">
+                    <div class="scroll-wrap">
+                        <div class="section-bg" style="background-image:url(img/bg/home.jpg);"></div>
+                        <div class="scrollable-content">
+                            <div class="vertical-centred">
+                                <div class="boxed boxed-inner">
+                                    <div class="boxed">
+                                        <div class="container">
+                                            <div class="intro">
+                                                <div class="row">
+                                                    <div class="col-md-8 col-lg-6">
+                                                        <h1 class="display-2 text-white  wow fadeIn" data-wow-delay="0.1s"><span class="text-primary">Hey,</span><br>I'm Leyton</h1>
+                                                        <a class="popup-youtube" href="https://www.youtube.com">
+                                                            <span class="icon ion-ios-play"></span>
+                                                            Watch video
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            <div data-anchor="AboutMe" class="pp-scrollable section section-2">
+                <div class="scroll-wrap">
+                    <div class="scrollable-content">
+                        <div class="vertical-title text-white  d-none d-lg-block">
+                            <span>what I do</span>
+                        </div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container">
+                                        <div class="intro">
+                                            <h2 class="title mb-5 pb-5">
+                                                <span class="text-primary">My</span>
+                                                specialization
+                                            </h2>
+                                            <div class="row-specialization row">
+                                                <div class="col-specialization col-md-6">
+                                                    <span class="icon-specialization icon-laptop-phone"></span>
+                                                    <h4 class="text-uppercase">Deep Learning</h4>
+                                                    <p>It was curiosity that made me interested in deep learning, how a very simple equation can describe an extremely complex phenomena, how we can squeeze nature into a formula.</p>
+                                                </div>
+                                                <div class="col-specialization col-md-6">
+                                                    <span class="icon-specialization icon-smartphone-embed"></span>
+                                                    <h4 class="text-uppercase">Web Development</h4>
+                                                    <p>A passion for creating stuff was ingrained since childhood. I find it facinating how anyone can express themselves in different ways.</p>
+                                                </div>
+                                            </div>
+                                            <div class="view-all">
+                                                <a href="https://www.tinyurl.com/LeytonD-Resume">
+                                                    Download resume
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-anchor="Resume" class="pp-scrollable text-white section section-3">
+                <div class="scroll-wrap">
+                    <div class="section-bg mask" style="background-image:url(img/bg/resume.jpg);"></div>
+                    <div class="scrollable-content">
+                        <div class="vertical-title d-none d-lg-block">
+                            <span>resume</span>
+                        </div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container">
+                                        <div class="intro">
+                                            <div class="row row-resume">
+                                                <div class="col-md-6 fadeY fadeY-1">
+                                                    <h2 class="resume-header title">Education</h2>
+                                                    <div class="col-resume">
+                                                        <div class="resume-content">
+                                                            <div class="resume-inner">
+                                                                <div class="resume-row">
+                                                                    <h6 class="resume-type">Academic Details</h6>
+                                                                    <i class="resume-study">Don Bosco Institute of Technology, University of Mumbai<br>Jun 2017 - May 2021</i>
+                                                                    <p class="resume-text">Information Technology</p>
+                                                                </div>
+                                                                <div class="resume-row">
+                                                                    <h6 class="resume-type">Specialization course</h6>
+                                                                    <i class="resume-study">Deeplearning.ai - Coursera<br>May 2020</i>
+                                                                    <a style="color:#fff;" href="https://www.coursera.org/account/accomplishments/specialization/certificate/DEBSLUBB4A7N">
+                                                                        <p class="resume-text">Deep Learning Specialization - Andrew Ng</p>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 pt-md-5 mt-md-5 fadeY fadeY-2">
+                                                    <h2 class="resume-header title">Experience</h2>
+                                                    <div class="col-resume">
+                                                        <div class="resume-content">
+                                                            <div class="resume-inner">
+                                                                <div class="resume-row">
+                                                                    <h6 class="resume-type">Machine Learning Intern</h6>
+                                                                    <i class="resume-study">Rupeeseed Technology Ventures Private Limited<br>Dec 2019 - Jan 2020</i>
+                                                                    <p class="resume-text">Twitter Troll Detection</p>
+                                                                </div>
+                                                                <div class="resume-row">
+                                                                    <h6 class="resume-type">Jio Intern</h6>
+                                                                    <i class="resume-study"><br>Jun 2020</i>
+                                                                    <p class="resume-text"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-anchor="Projects" class="pp-scrollable text-white section section-4">
+                <div class="scroll-wrap">
+                    <div class="bg-changer">
+                        <div class="section-bg" style="background-image:url(img/bg/blocks.gif);"></div>
+                        <div class="section-bg" style="background-image:url(img/bg/rain.gif);"></div>
+                        <div class="section-bg" style="background-image:url(img/bg/resto.gif);"></div>
+                        <div class="section-bg" style="background-image:url(img/bg/room.gif);"></div>
+                    </div>
+                    <div class="scrollable-content">
+                        <div class="vertical-title  d-none d-lg-block">
+                            <span>my works</span>
+                        </div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container">
+                                        <div class="intro">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="project-row">
+                                                        <a class="taphover" href="https://github.com/leytondsilva">
+                                                            <span class="project-number">01</span>
+                                                            <h2 class="project-title">Voice Enabled Chatbot</h2>
+                                                            <div class="project-category">Deep Learning</div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-row">
+                                                        <a class="taphover active" href="https://github.com/leytondsilva/Arduino-assisted-Hydroponics-Project">
+                                                            <span class="project-number">02</span>
+                                                            <h2 class="project-title">Automated Hydroponics</h2>
+                                                            <div class="project-category">Arduino</div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-row">
+                                                        <a class="taphover " href="https://github.com/leytondsilva/NNFS_PygameMySQL">
+                                                            <span class="project-number">03</span>
+                                                            <h2 class="project-title">No Need for Speed</h2>
+                                                            <div class="project-category">Pygame</div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="project-row">
+                                                        <a class="taphover " href="https://github.com/leytondsilva/MacroRecorder">
+                                                            <span class="project-number">04</span>
+                                                            <h2 class="project-title">Macro Recorder</h2>
+                                                            <div class="project-category">Automation</div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="view-all view-all-projects">
+                                                        <a href="https://github.com/leytondsilva">View all projects</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-anchor="WebApps" class="pp-scrollable text-white section section-5">
+                <div class="scroll-wrap">
+                    <div class="bg-changer">
+                        <div class="section-bg" style="background-image:url(img/bg/cyberwork.gif);"></div>
+                    </div>
+                    <div class="scrollable-content">
+                        <div class="vertical-title  d-none d-lg-block">
+                            <span>web apps</span>
+                        </div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container">
+                                        <div class="intro">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="project-row">
+                                                        <a class="taphover" href="https://leytondsilva.github.io/emorec">
+                                                            <span class="project-number">01</span>
+                                                            <h2 class="project-title">Real-time Face Expression Recognizer</h2>
+                                                            <div class="project-category">face-api.js</div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="view-all view-all-projects">
+                                                        <a href="https://github.com/leytondsilva">View all projects</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-anchor="Contact" class="pp-scrollable section section-6">
+                <div class="scroll-wrap">
+                    <div class="section-bg" style="background-image:url(img/bg/contact.jpg);"></div>
+                    <div class="scrollable-content">
+                        <div class="vertical-title text-white d-none d-lg-block">
+                            <span>contact</span>
+                        </div>
+                        <div class="vertical-centred">
+                            <div class="boxed boxed-inner">
+                                <div class="boxed">
+                                    <div class="container">
+                                        <div class="intro overflow-hidden">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h2 class="title">
+                                                        <span class="text-primary">Maharashtra, </span>
+                                                        India
+                                                    </h2>
+                                                    <h5 class="text-muted">Mumbai</h5>
+                                                    <section class="contact-address">
+                                                        <h3>
+                                                            <a class="mail" href="#">
+                                                               contact@leyton.com
+                                                            </a>
+                                                        </h3>
+                                                        <h3>
+                                                            <span class="phone">+96 56-85-1379</span>
+                                                        </h3>
+                                                    </section>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="contact-info">
+                                                        <form class="js-form" novalidate="novalidate" action="#" method="post" enctype="text/plain">
+                                                            <div class="row">
+                                                                <div class="form-group col-sm-6">
+                                                                    <input type="text" name="name" required="" placeholder="Name*" aria-required="true">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <input type="email" required="" name="email" placeholder="Email*">
+                                                                </div>
+                                                                <div class="form-group col-sm-12">
+                                                                    <input type="text" name="subject" placeholder="Subject (Optional)">
+                                                                </div>
+                                                                <div class="form-group col-sm-12">
+                                                                    <textarea name="message" required="" placeholder="Message*"></textarea>
+                                                                </div>
+                                                                <div class="form-group form-group-message col-sm-12">
+                                                                    <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>
+                                                                    <span id="error" class="text-primary">Sorry, something went wrong </span>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <button type="submit" class="btn">Contact me</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/animsition.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.pagepiling.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+</html>
