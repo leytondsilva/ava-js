@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    background-image: url("/img/bg/WEB_Wall.jpg");
+    background-image: url("../img/bg/WEB_Wall.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 720px;
