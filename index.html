@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./img/aide_ai.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 <style>
-  #transcript2{
+  #queryListener{
     color: whitesmoke;
     font-size: 1vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +38,7 @@ function startDictation() {
 
       recognition.onresult = function(e) {
       var query = e.results[0][0].transcript;
-      document.getElementById('transcript2').innerHTML = query;
+      document.getElementById('queryListener').innerHTML = query;
       document.getElementById('transcript_query').value = query;
       recognition.stop();
 
@@ -49,7 +49,7 @@ function startDictation() {
       };
     
       recognition.onstart = function() {
-        document.getElementById('transcript2').innerHTML = "Listening...";
+        document.getElementById('queryListener').innerHTML = "Listening...";
         if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'http://192.168.1.102:8000/'){
           document.getElementById('transcript1').remove();
         }
@@ -160,7 +160,7 @@ function HomePage(){
         document.write("<p id='transcript1' class='Trans'>Click and <strong>Say Something</strong> or <strong>Say Goodbye</strong> to exit</p>");
       }
     </script>
-    <p id="transcript2"></p>
+    <p id="queryListener"></p>
 
     <form name="query_form" method="GET" action="{% url 'Voice' %}">
       {% csrf_token %}
