@@ -1,11 +1,21 @@
-body {
-    margin: auto;
-    background-image: url("../img/bg/WEB_Wall.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 720px;
-    min-width: 1280px;
-    user-select: none;
+
+html {
+  -webkit-font-smoothing: antialiased
+}
+body {  
+  font-family: poppins,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .02em;
+  line-height: 1.9428;
+  margin: auto;
+  background-image: url("../img/bg/WEB_Wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 720px;
+  min-width: 1280px;
+  user-select: none;
+  text-align: left;
 }
 
 .circle {
@@ -164,9 +174,12 @@ input[type='image']:hover{
   }
 
 footer{
+  display: block;
   position: absolute;
-  top: 94%;
-  left: 44%;
-  color: whitesmoke;
-  font-size: 0.8vw;
-  }
+  left: 2rem;
+  bottom: 2.1rem;
+  font-size: .9rem;
+  color: white;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem
+}
