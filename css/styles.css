@@ -61,21 +61,21 @@ input[type='image']:hover{
 }
 
 .header {
-    background-color: black;
-    position: absolute;
-    color:white;
-    height: 16.5vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
     width: 100%;
+    color:white;
+    line-height: 2.8rem;
 }
 
 .textHeader1{
-    font-size: 3vw;
+    font-size: 3rem;
     text-align: center;
+    padding: 1rem 0 1rem;
 }
 
 .textHeader2{
-    padding-top: 1.3%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -86,12 +86,11 @@ input[type='image']:hover{
 
 .imagePos{
 
-    left: 2%;
-    top: 1.2vh;
-    position: absolute;
+    right: 2vw;
+    top: 1.2rem;
+    position: fixed;
     z-index: 1;
 }
-
 .Trans_ans{
     color: lightblue;
     font-size: 1vw;
