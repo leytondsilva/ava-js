@@ -31,7 +31,7 @@
         },
 	{"tag": "intake",
          "patterns": ["What is the intake", "what is the intake for mech mechanical", "what is the intake for comps", "what is the intake for IT branch", "what is the intake for Info Tech branch", "what is the intake for Information Technology", "what is the intake for computer science", "minority", "catholic quota", "Intake"],
-         "responses": ["The college, under the University of Mumbai, offers bachelors degrees in engineering in the following programs, 120 seats in Mechanical engineering, 60 seats in Electronics and telecommunications engineering, Computer engineering, Information technology each. Granted a religious minority quota, 51 percent of all seats are reserved for Roman Catholics."],
+         "responses": ["The college, under the University of Mumbai, offers bachelors degrees in engineering in the following programs, 120 seats intake Mechanical engineering, 60 seats intake Electronics and telecommunications engineering, Computer engineering, Information technology each. Granted a religious minority quota, 51 percent of all seats are reserved for Roman Catholics."],
          "context_set": ""
         },
         {"tag": "goodbye",

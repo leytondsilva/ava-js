@@ -11,8 +11,12 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/styles.css" media="screen">
   
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+  <!-- Load the qna model. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"> </script>
   <script src="./js/scripts.js"></script>
-
+  
+  
 
   <style>
     #queryListener{
@@ -26,7 +30,9 @@
 
 
 <body>
-
+  <input type=text id="question" placeholder="Enter question here">
+  <input type="submit" onclick="avaMobileBert()">
+ 
   <img src="./img/ava-js.png" width="160" height="160" class="imagePos" alt="Ava-js">
 
   <div class="header" >

@@ -1,3 +1,16 @@
+const knowledge = "Don Bosco Institute of Technology is a private engineering college situated at Kurla West, Mumbai; affiliated with the University of Mumbai. It has been granted a Religious Minority status Roman Catholics. The institute was awarded B++ grade in 2019 by NAAC. The campus has lush greenery throughout the year. The outdoors are spruced up by placing potted plants. Recent changes have been to the landscape, by addition of a lawn at the upper echelons which double as a playground and reception venue. The college has a football ground, volley ball court and a basketball court to facilitate outdorr activities. Don Bosco has provisions for indoor games like carrom, chess and table tennis. Don Bosco has mainly two cultural events. The intra-college technical festival organized by the college is called Colosseum. The college has started Hysteria from 2016 onwards, which is the cultural and sports mega fest for all the institutions that come under DBCL.The college also organizes Teknack and Game of Codes, an inter-collegiate online festival which is powered by the Association for Computing Machinery and Computer Society of India student chapters at Don Bosco. The college, under the University of Mumbai, offers bachelors degrees in engineering in the following programs, 120 seats intake Mechanical engineering, 60 seats intake Electronics and telecommunications engineering, Computer engineering, Information technology each. Granted a religious minority quota, 51 percent of all seats are reserved for Roman Catholics. The fees summed up for all the four years is 4 lakh 80 thousand, which is roughly 1 lakh 20 thousand a year. Branches like Information Technology, Computer Science, Mechanical and Electronics and Communication Engineering. College timings are Monday to Friday 9am to 5pm and there is a 15 minute break at 11am and, a 45 minute break at 1:15pm."
+
+
+function avaMobileBert(){
+    var question = document.getElementById("question").value;
+    qna.load().then(model => {
+      // Find the answers
+      model.findAnswers(question, knowledge).then(answers => {
+        document.getElementById('queryListener').innerHTML = answers[0]['text'];
+      });
+    });
+}
+/*
 function loadJSON(callback) {   
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -13,7 +26,7 @@ function loadJSON(callback) {
 var intents = loadJSON(function(json) {
     return json; // this will log out the json object
 });
-console.log(intents);
+*/
 
 function ChangeImage() {
     document.getElementById('Click').src = "./img/button_on.png"
