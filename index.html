@@ -27,7 +27,7 @@
 
 <body>
 
-  <img src="./img/ava-js.png" width="180vw" height="180vw" class="imagePos" alt="Ava-js">
+  <img src="./img/ava-js.png" width="160" height="160" class="imagePos" alt="Ava-js">
 
   <div class="header" >
     <ul style="list-style-type: none;">
@@ -39,23 +39,13 @@
   <p style="position:absolute;left: 84.5%;top:20vh;color: white;font-size: 1.1vw;font-family: Arial, Helvetica, sans-serif;">English </p>
   <p style="position:absolute;left: 92.5%;top:20vh;color: white;font-size: 1.1vw;font-family: Arial, Helvetica, sans-serif;">Hindi </p>
     <label class="switch">
-      <script>
-        if('{{Lang}}' == 'true'){
-          document.write('<input type="checkbox" id="CheckBox" checked>');
-          document.write('<span class="slider round"></span>');
-        }
-        else{
-          document.write('<input type="checkbox" id="CheckBox">');
-          document.write('<span class="slider round"></span>'); 
-        }
-//        <input type="checkbox" id="CheckBox">
-//        <span class="slider round"></span>
-      </script>
+      <input type="checkbox" id="LangBtn" onclick="LangChange()" value="English">
+      <span class="slider round"></span> 
     </label>
 
     <div class="center">
       <script>
-        if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'https://leytondsilva.github.io/ava-js/'){
+        if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'http://127.0.0.1:5500/#'){
           document.write("<input type='image' src='./img/button_off.png' id='Click' onclick='ChangeImage();startDictation();' width='25%' height='25%'>");
           sessionStorage.setItem("counter",1);
         }
@@ -74,9 +64,8 @@
       }
     </script>
     <p id="queryListener"></p>
-
-    <form name="query_form" method="GET" action="{% url 'Voice' %}">
-      {% csrf_token %}
+<!--
+    <form name="query_form" method="GET" action="">
       <input type="hidden" id="Language_Select" name="Language" value="">
       <input type="hidden" id="transcript_query" name="Query_text" value="">
     </form>
@@ -88,7 +77,7 @@
     speechSay('{{Ans}}','{{Lang}}');
     </script>
     {% endif %}
-
+  -->
 <footer>© Leyton & Valentine 2020.</footer>
 
 </body>

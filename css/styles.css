@@ -86,7 +86,7 @@ input[type='image']:hover{
 
 .imagePos{
 
-    right: 2vw;
+    left: 2vw;
     top: 1.2rem;
     position: fixed;
     z-index: 1;

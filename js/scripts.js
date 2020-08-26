@@ -2,6 +2,18 @@
 function ChangeImage() {
     document.getElementById('Click').src = "./img/button_on.png"
 }
+
+function LangChange() {
+
+    var checkBox = document.getElementById("LangBtn");
+
+    if (checkBox.checked == true){
+        document.getElementById("LangBtn").value = "Hindi";
+    }
+    else {
+        document.getElementById("LangBtn").value = "English";
+    }
+}
   
 function startDictation() {
   
@@ -25,14 +37,14 @@ function startDictation() {
             recognition.stop();
     
              //  CheckBox Button    
-            var lang_model = document.getElementById('CheckBox').checked;
-            document.getElementById('Language_Select').value = lang_model;
-            document.forms["query_form"].submit();
+            var lang_model = document.getElementById('LangBtn').value;
+            //document.getElementById('Language_Select').value = lang_model;
+            //document.forms["query_form"].submit();
         };
       
         recognition.onstart = function() {
           document.getElementById('queryListener').innerHTML = "Listening...";
-          if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'https://leytondsilva.github.io/ava-js/'){
+          if(window.location.href == 'http://127.0.0.1:5500/#' || window.location.href == 'https://leytondsilva.github.io/ava-js/'){
             document.getElementById('transcript1').remove();
           }
         }
@@ -40,7 +52,7 @@ function startDictation() {
         recognition.onerror = function(e) {
           recognition.stop();
           speechSay('Did not hear anything','false');
-          location.replace('https://leytondsilva.github.io/ava-js/');
+          location.replace('#');
         }
   
     }
@@ -67,7 +79,7 @@ function speechSay(message,lange){
     speech.rate = 1;
     speech.pitch = 1;
 
-    if(window.location.href != 'https://leytondsilva.github.io/ava-js/'){
+    if(window.location.href != '12'){
         speech.onend = function() {
             startDictation();
         }
@@ -75,7 +87,7 @@ function speechSay(message,lange){
 
     speechSynthesis.speak(speech);
     if(speech.text == 'Goodbye' || speech.text == 'alvida'){
-        location.replace('https://leytondsilva.github.io/ava-js/');
+        location.replace('#');
     }
 }
   
@@ -84,6 +96,6 @@ function HomePage(){
     sessionStorage.setItem("counter",0);
     speechSynthesis.cancel();
     speechSay('Goodbye','false');
-    location.replace('https://leytondsilva.github.io/ava-js/');
+    location.reload();
 }
-  
+
