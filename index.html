@@ -55,11 +55,11 @@
 
     <div class="center">
       <script>
-        if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'http://192.168.1.102:5500/'){
+        if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'https://leytondsilva.github.io/ava-js/'){
           document.write("<input type='image' src='./img/button_off.png' id='Click' onclick='ChangeImage();startDictation();' width='25%' height='25%'>");
-          localStorage.setItem("counter",1);
+          sessionStorage.setItem("counter",1);
         }
-        else if(localStorage.getItem("counter") == 1){
+        else if(sessionStorage.getItem("counter") == 1){
           document.write("<input type='image' src='./img/button_on.png' id='Click' onclick='HomePage();' width='25%' height='25%'>");
         }
       </script>
@@ -69,7 +69,7 @@
     <div class='circle' style='animation-delay: 1s'></div>
 
     <script>
-      if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'http://192.168.1.102:8000/'){
+      if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'https://leytondsilva.github.io/ava-js/'){
         document.write("<p id='transcript1' class='Trans'>Click and <strong>Say Something</strong> or <strong>Say Goodbye</strong> to exit</p>");
       }
     </script>
