@@ -32,7 +32,7 @@ function startDictation() {
       
         recognition.onstart = function() {
           document.getElementById('queryListener').innerHTML = "Listening...";
-          if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'http://192.168.1.102:8000/'){
+          if(window.location.href == 'http://127.0.0.1:5500/' || window.location.href == 'https://leytondsilva.github.io/ava-js/'){
             document.getElementById('transcript1').remove();
           }
         }
@@ -40,7 +40,7 @@ function startDictation() {
         recognition.onerror = function(e) {
           recognition.stop();
           speechSay('Did not hear anything','false');
-          location.replace('http://127.0.0.1:5500/');
+          location.replace('https://leytondsilva.github.io/ava-js/');
         }
   
     }
@@ -67,26 +67,23 @@ function speechSay(message,lange){
     speech.rate = 1;
     speech.pitch = 1;
 
-    if(window.location.href != 'http://127.0.0.1:5500/'){
+    if(window.location.href != 'https://leytondsilva.github.io/ava-js/'){
         speech.onend = function() {
             startDictation();
         }
     }
 
     speechSynthesis.speak(speech);
-    if(speech.text == 'Goodbye'){
-        location.replace('http://127.0.0.1:5500/');
-    }
-    else if(speech.text == 'alvida'){
-        location.replace('http://127.0.0.1:5500/');
+    if(speech.text == 'Goodbye' || speech.text == 'alvida'){
+        location.replace('https://leytondsilva.github.io/ava-js/');
     }
 }
   
     
 function HomePage(){
-    localStorage.setItem("counter",0);
+    sessionStorage.setItem("counter",0);
     speechSynthesis.cancel();
     speechSay('Goodbye','false');
-    location.replace('http://127.0.0.1:5500/');
+    location.replace('https://leytondsilva.github.io/ava-js/');
 }
   
